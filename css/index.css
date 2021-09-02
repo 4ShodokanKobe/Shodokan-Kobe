@@ -17,7 +17,7 @@ body{
   background-image: linear-gradient(to right, #ffffff, #F5F186)
 }
 
-.E{
+.J{
   display: none;
 }
 
@@ -99,6 +99,8 @@ header{
 .topnav {
   overflow: hidden;
   background-color: rgba(0,138,212,.8);
+  padding: 0;
+  padding-left: 100px;
 }
 
 .topnav a {
@@ -292,8 +294,8 @@ transform: scale(1.1);
 .flex{
    display: flex;
    flex-wrap: wrap;
-   align-content: space-between;/*
-   justify-content: space-between;*/
+   align-content: space-between;
+   justify-content: center;
 
 }
 .flexPhoto *{
@@ -306,6 +308,8 @@ transform: scale(1.1);
    padding-left: 5%;
    padding-right: 5%;
    border-radius: 3em;
+   display: flex;
+
 }
 
 
@@ -318,28 +322,21 @@ div.desc {
 
 
 /*GALLERY*/
-.galleryImg{
+/*.galleryImg{
    display: inline-flex;
    flex-wrap: wrap;
    flex: 1;
    justify-content: space-around center;
    max-width: 100%;
    padding: 5px;
-}
-
-/*.PG{
-  display: flex;
-  justify-content: space-around center;
 }*/
 
-/*.gallery img{
-   height: 5em;
-   width: auto;
-   padding: 5px;
-}*/
+
+
 .PG{
-  height: 10em;
-  width: 10em;
+  height: auto;
+  width: 100%;
+  min-width: 200px;
   margin: 3px;
   text-align: center;
   background-color: palegreen;
