@@ -1,0 +1,13 @@
+body > p{
+	font-size: 2em;
+}
+.child{
+	padding: 0 8%;
+
+}
+.topnav a, button{
+	font-size: .9em;
+}
+.intro{
+	font-size: 2.5em;
+}
