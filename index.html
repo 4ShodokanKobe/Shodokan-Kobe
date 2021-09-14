@@ -16,6 +16,21 @@
 
 <body>
 
+  <div class="bold translate grow" onclick="toggleLingo()"><div class="E"> 日本語 </div><div class="J"> ENGLISH </div></div>
+
+  <script>
+ // lingo translate
+  function toggleLingo() {
+       // make array of all links
+    var lingo = document.getElementsByTagName('link')[0];
+       // Change the value of href attribute to change the css sheet.
+    if (lingo.getAttribute('href') == 'css/Japanese.css') {
+        lingo.setAttribute('href', 'css/English.css');
+     } else {
+        lingo.setAttribute('href', 'css/Japanese.css');
+     }
+ }
+</script>
 
 <!-- NAV -->
  <!-- <div class="TOP"> -->
@@ -66,7 +81,7 @@
 </div>
 
 
-  <div class="bold translate grow" onclick="toggleLingo()"><div class="E"> 日本語 </div><div class="J"> ENGLISH </div></div>
+
 
 
 
@@ -141,7 +156,7 @@
   </p>
       <p class="J">Today was our second practise at the Oji sports center. Mr. Daniels and Mr. Tatsuya attended practise where we started of with taking some photos for our website. Then we started with some Kihon(basic stretches) followed by Sotai Kihon (Shodokan's warm-up). That was followed by some ukemi (breakfall) practise.<br>
     Next up we practised the Junanahon (17 basic techniques), some bokuto (wooden sword) practise and then we ended the class with a light randori (sparring) kenshuu (workshop)<br>
-    Due to the combination of mask use, 32°C climate and 55% humidity we took regular water breaks between excersizes.<br>
+    Due to the combination of mask use, 32°C climate and 55% humidity we took regular water breaks between exersizes.<br>
     The last 10 minutes were of course spent cleaning the dojo.
   </p>
 
@@ -311,19 +326,7 @@ function topFunction() {
 
 
 
-<script>
- // lingo translate
-  function toggleLingo() {
-       // make array of all links
-    var lingo = document.getElementsByTagName('link')[0];
-       // Change the value of href attribute to change the css sheet.
-    if (lingo.getAttribute('href') == 'css/Japanese.css') {
-        lingo.setAttribute('href', 'css/English.css');
-     } else {
-        lingo.setAttribute('href', 'css/Japanese.css');
-     }
- }
-</script>
+
 
 <script>
 function myFunction() {
