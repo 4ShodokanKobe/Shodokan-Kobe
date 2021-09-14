@@ -93,8 +93,29 @@ header{
   box-sizing: border-box;
   }
 
+/*make the background of the button radiant red to transparency?*/
+.translate{
+  color: white;
+  background-color: rgba(255,20,20,.4);
+  border-radius: 15px;
+  padding: 5px;
+  display: inline-flex;
+  position: fixed;
+  right: 20px;
+  z-index: 3;
+  bottom: 10px;
+  
+/*  position: sticky;
+  width: 80px;
+  top: 140px;
+  left: 17px;
+  display: block;
+  justify-content: center;*/
+}
+.translate:hover{
 
-
+  background-color: rgba(255,20,20,.9);
+}
 
 .topnav {
   overflow: hidden;
@@ -143,7 +164,7 @@ header{
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 4;
   /*padding: 10px;*/
 }
 
@@ -227,6 +248,9 @@ button{
    z-index: 9;
    display: flex;
 }
+
+
+
 .grow { 
 transition: all .2s ease-in-out; 
 }
@@ -378,7 +402,7 @@ max-width: 100%;
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 30px;
   z-index: 99;
   font-size: 18px;
