@@ -11,3 +11,7 @@ body > p{
 .intro{
 	font-size: 2.5em;
 }
+
+.fontSmaller{
+	font-size: 1em;
+}
