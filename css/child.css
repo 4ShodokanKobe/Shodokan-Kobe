@@ -30,6 +30,14 @@ body > p{
 }
 
 .gallery > img{
-	padding: 10px 2%;
-	width: 46%;
+	padding: 10px 5px;
+	width: 300px;
+	display: inline-flex;
+	flex-wrap: all;
+}
+.gallery > img:hover{
+	
+  z-index: 99;
+
+  transform: scale(2.5);
 }

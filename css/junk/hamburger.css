@@ -1,0 +1,70 @@
+/* [ON THE BIG SCREEN] */
+/* HAMBURGER ICON */
+#page-nav-wrap label {
+  color: #fff;
+  background: #ce3535;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+
+}
+#page-nav-wrap label, #hamburger {
+  /* Hide the hamburger icon */
+  display: none;
+}
+/* NAVIGATION BAR */
+#page-nav-wrap {
+  background: #000;
+}
+#page-nav {
+  display: flex;
+  flex-direction: row;
+}
+#page-nav a {
+  color: #fff;
+  padding: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  /* Flex grow and basis will auto adjust the width */
+  /* Remove these if you do not want auto width */
+  flex-grow: 1;
+  flex-basis: 0;
+  /* A little bit of CSS animation magic */
+  transition: all ease 0.3s;
+}
+#page-nav a:hover {
+  background: #9b2222;
+}
+
+/* [ON THE SMALL SCREEN] for dropdown menu */
+@media only screen and (max-width: 99999999999999999px) {
+  /* Show hamburger icon */
+  #page-nav-wrap label {
+  background-color: transparent;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 100%;
+}
+  
+  /* Collapse menu */
+  #page-nav {
+    flex-direction: column;
+  }
+  /* Show/hide menu on checkbox click */
+  #page-nav {
+    display: none;
+  }
+  #page-nav-wrap input:checked ~ #page-nav {
+    display: flex;
+  }
+}
+
+#page-nav-wrap label:chacked, #hamburger:checked{
+  display: hidden;
+}
+
+header.scrolled nav #page-nav-wrap{
+  top:-5;
+}
