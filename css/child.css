@@ -15,3 +15,21 @@ body > p{
 .fontSmaller{
 	font-size: 1em;
 }
+
+.Phil{
+	width: 80%;
+	height: auto;
+	display: inline-flex;
+	padding: 10px 10%;
+	justify-content: center;
+	align-content: center;
+}
+
+.radius{
+	border-radius: 15%;
+}
+
+.gallery > img{
+	padding: 10px 2%;
+	width: 46%;
+}
