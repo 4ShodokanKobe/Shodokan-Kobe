@@ -46,9 +46,3 @@ body > p{
 	width: 350px;
 	height: auto;
 }
-
-.blah{
-	
-	display: inline-flex;
-	justify-content: space-between;
-}
