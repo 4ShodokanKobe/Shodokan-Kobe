@@ -8,6 +8,9 @@ img {vertical-align: middle;}
   margin: auto;
   background-color: dimgrey;
 }
+.mySlides > img{
+  width:100%;
+}
 
 /* Caption text */
 .text {
