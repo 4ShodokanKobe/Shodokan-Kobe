@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>flex layout sticky sidemenu</title>
+	<link rel="stylesheet" type="text/css" href="fullFlexMain.css">
+	<style type="text/css">
+	*{
+		font-family: freight;
+		font-size: 16px;
+	}
+	*, body, .wrapper{
+		margin: 0;
+		padding: 0;
+	}
+		.aside-1{
+						
+
+		}
+
+
+		.main{
+
+
+		}
+		.fit{
+			width: 100%;
+			height: auto;
+			font-size: 20px;
+		}
+		.aside-1{
+			/*display: flex;
+			height: vh;
+			width: 30%;
+			min-width: 300px;*/
+			background-color: rgba(250, 0, 0, 0.8);
+			/*flex-grow: 1;*/
+
+		}
+		.left-nav li{
+			display: flex;
+			justify-content: right;
+			padding: 10px;
+			color: yellow;
+			list-style: none;
+			font-weight: bold;
+			font-size: 1.3em;
+		}
+		.left-nav li:hover{
+			background-color: yellow;
+			display: flex;
+			flex-grow: 111%;
+			color: #ff1111;
+		}
+
+		.flexWrap{
+			display: inline-flex;
+			flex-wrap: wrap;
+		}
+		.row {
+			  display: flex;
+			  flex-wrap: wrap;
+			  padding: 0 4px;
+			}
+
+			/* Create four equal columns that sits next to each other */
+			.column {
+			  flex: 25%;
+			  max-width: 49%;
+			  padding: 0 4px;
+			}
+
+			.column img {
+			  margin-top: 8px;
+			  vertical-align: middle;
+			}
+
+			/* Responsive layout - makes a two column-layout instead of four columns */
+			@media (max-width: 800px) {
+			  .column {
+			    flex: 50%;
+			    max-width: 50%;
+			  }
+			}
+
+			/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+			@media (max-width: 600px) {
+			  .column {
+			    flex: 100%;
+			    max-width: 100%;
+			  }
+			}
+
+		.backgroundPic1{
+			display: flex;
+			margin: 0%;
+			padding-left: 0%;
+			padding-right: 0%;
+			overflow-wrap: auto;
+		}
+
+
+
+/*		element.style {
+    background-image: url(https://en.shodokanaikido.com/wp-content/uploads/2021/08/visitHonbu__splash.jpg);
+}*/
+.splash__image, .splash__slide {
+    background-position: center;
+/*    background-size: cover;
+*/    width: 100%;
+    min-height: 50%;
+    height: auto;
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    z-index: -10;
+}
+
+.whiteFont1{
+	color: #ffffff;
+	font-size: 80px;
+}
+.whiteFont2{
+	color: #ffffff;
+	font-size: 50px;
+}
+.navLogo{
+	height: 300px;
+	width: auto;
+}
+
+
+
+	</style>
+
+
+
+
+
+</head>
+<body>
+
+		<header class="splash">
+            <!-- <div class="splash__wrapper"><h1 class="splash__txt mrgn-b-x">BEERISIMO</h1></div> -->
+            <span class="splash__image" style="background-image: url('stockwarehouse.jpeg');"></span>
+        </header>
+	<div class="wrapper">
+
+
+		<div class="aside-1">
+			<img class="navLogo" src="logo.png">
+		<nav class="left-nav">
+			
+			<li>Home</li>
+			<li>Products</li>
+			<li>About Us</li>
+			<li>Contact us</li>
+			<li>Partnerships</li>
+			<hr>
+			<li>Sitemap</li>
+
+			<p class="center">Beerisimo® All rights reserved</p>
+		</nav>
+		</div>
+<!-- //////////////////////////////////////////////////////////////////////// -->
+<!-- <div class="backgroundPic1"><img class="first" src="stockwarehouse.jpeg"></div> -->
+
+
+
+		<div class="main">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1 class="whiteFont1">BEERISIMO!</h1>
+			<h3 class="whiteFont2">Because you know what you want!</h3>
+			<br><br><br><br><br><br><br><br><br><br><br>
+			
+		<div class="flexWrap">
+			<div class="column-1 column">			
+				<img class="fit row" src="lorry.jpeg" alt="lorry image">
+				<p class="fit row">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+
+			<div class="column-1 column">
+				<img class="fit row" src="aleBarrel.jpeg" alt="Ale glasses and barrel">
+				<p class="fit row">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+
+				<img class="fit ninety" src="brewery.jpeg" alt="brewery image">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+		</div>
+
+
+
+
+
+
+	</div>
+
+
+</body>
+</html>
