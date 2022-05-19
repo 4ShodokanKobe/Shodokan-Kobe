@@ -13,6 +13,7 @@
 	*, body, .wrapper{
 		margin: 0;
 		padding: 0;
+		z-index: 2;
 	}
 		.aside-1{
 						
@@ -128,6 +129,8 @@
 .whiteFont1{
 	color: yellow;
 	font-size: 80px;
+
+	padding-top: 50px;
 }
 .whiteFont2{
 	color: yellow;
@@ -136,6 +139,12 @@
 .navLogo{
 	height: 300px;
 	width: auto;
+}
+.heavyPadding{
+	min-height: 300px;
+	padding-top: 250px;
+	padding-left: 40%;
+	z-index: 0;
 }
 
 	</style>
@@ -148,7 +157,12 @@
 <body>
 
 		<header class="splash">
-			<img  class="splash__image" src="stockwarehouse.jpeg">
+
+			<div class="heavyPadding" style="background-image: url('stockwarehouse.jpeg');">
+				<h1 class="whiteFont1">BEERISIMO!</h1>
+				<h3 class="whiteFont2">Because you know what you want!</h3><!-- </p> -->
+			</div>
+			<!-- <img  class="splash__image" src="stockwarehouse.jpeg"> -->
             <!-- <div class="splash__wrapper"><h1 class="splash__txt mrgn-b-x">BEERISIMO</h1></div> -->
             <!-- <span> --><!-- </span> -->
             <!-- <span class="splash__image" style="background-image: url('stockwarehouse.jpeg');"></span> -->
@@ -178,8 +192,8 @@
 
 		<div class="main">
 				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			<h1 class="whiteFont1">BEERISIMO!</h1>
-			<h3 class="whiteFont2">Because you know what you want!</h3>
+			<!-- <h1 class="whiteFont1">BEERISIMO!</h1> -->
+			<!-- <h3 class="whiteFont2">Because you know what you want!</h3> -->
 			<br><br><br><br><br><br><br><br><br><br><br>
 			
 		<div class="flexWrap">
