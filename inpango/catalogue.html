@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inpango Commercial Trading</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <script src="https://kit.fontawesome.com/7dc3015a44.js" crossorigin="anonymous"></script><!-- SNS logos -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <!-- <link rel="stylesheet" href="../css/cards.css"> -->
+    <link rel="stylesheet" type="text/css" href="styles/hoverGallery.css">
+
+
+<!-- portfolio -->
+
+
+
+<!-- END OF PORTFOLIO -->
+<style type="text/css">
+@media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px; */
+    .padding20{
+      padding-right: 7%;
+    padding-left: 7%;
+  }
+}
+
+</style>
+
+  </head>
+
+  <body>
+
+
+
+<!-- NAVBAR -->
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="index.html">
+      <img src="img/grey.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <a class="navbar-item">
+        Documentation
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            About
+          </a>
+          <a class="navbar-item">
+            Jobs
+          </a>
+          <a class="navbar-item">
+            Contact
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item">
+            Report an issue
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div> -->
+  </div>
+</nav>
+
+  <!-- END NAV -->
+
+    <div class="container">
+      <div class="section">
+        
+
+        <div class="columns">
+          <div class="column has-text-centered">
+            <h1 class="title" style="color: #000000;">DIGGERS</h1>
+          </div>
+        </div>
+
+        <!-- PRODUCT CARDS -->
+        <div id="app" class="row columns is-multiline">
+        
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div v-for="card in cardData" key="card.id" class="column is-4">
+            <div class="card large">
+              <div class="card-image">
+                <figure class="image is-16by9">
+                  <img src="img/categories/diggers/1.jpg" alt="Image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-left">
+                    <figure class="image is-48x48">
+                      <img src="img/icons/diggerIcon.png" alt="Image">
+                    </figure>
+                  </div>
+                  <div class="media-content">
+                    <p class="title is-4 no-padding">SANY Digger</p>
+                    <p>
+                      <span class="title is-6">
+                        <a :href="http://twitter.com/${card.user.handle}"> Digger </a> </span> </p>
+                    <p class="subtitle is-6">400 Hourse Power</p>
+                  </div>
+                </div>
+                <div class="content">
+                  Vehicle
+                  <div class="background-icon"><span class="icon-twitter"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- END OF PRODUCT CARDS -->
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+
+      <div class="row columns">
+        
+        <div class="column is-4">
+          <h4>CONTACT US</h4>
+          For Inquiries, more infromation and quotes<br>
+          info@inpango.com
+        </div>
+
+        <div class="column is-4">
+          <h4>HEAD OFFICE ADDRESS</h4>
+          INPANGO COMMERCIAL TRADING
+          <br>P.O. BOX 2200
+          <br>COMMERCIAL COMPLEX
+          <br>SANTA CLARA
+          <br>ANGOLA
+        </div>
+          
+          <div class="soc column is-4">
+            <h4>EXTERNAL LINKS</h4>
+            <a href="#"><i class="fa fa-github-alt fa-lg" aria-hidden="true"></i></a><br>
+            <a href="#"><i class="fa fa-youtube fa-lg" aria-hidden="true"></i></a><br>
+            <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a><br>
+            <a href="#"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a><br>
+          </div>
+          
+      </div>
+
+
+          <p>
+            <strong>Inpango.com</strong> by <a href="http://webisimo.eu">Rory Daniels</a>.
+             <br>
+          </p>
+
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/cardsData.js"></script>
+
+    <!-- Using Vue to populate cards to reduce redundant code -->
+    <script>
+      var app = new Vue({
+        el: '#app',
+        data: {
+          cardData: cardsData
+        }
+      })
+
+    </script>
+    <!-- navbar dropdown -->
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+
+});
+    </script>
+
+    <!-- Accordion -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+  </body>
+
+</html>
